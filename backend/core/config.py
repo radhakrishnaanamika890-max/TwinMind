@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     qdrant_collection: str = "twinmind_memory"
     google_client_id: str = "972720826866-tds1j0uggh2fssk8oaq9lbinj05q15i4.apps.googleusercontent.com"
     google_client_secret: str = "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"
-    google_redirect_uri: str = "http://localhost:8000/auth/callback"
+    google_redirect_uri: str = "https://twinmind-production-5a79.up.railway.app/auth/callback"
     firebase_project_id: str = "twinmind-personal-digital-twin"
     firebase_credentials_path: str = "./firebase_credentials.json"
     lyzr_api_key: str = "sk-default-EXGrHJrWY4xXxVZ6ngW33Q9o3YvBTd4B"
@@ -17,17 +17,19 @@ class Settings(BaseSettings):
 
     github_client_id: str = "Ov23liSWxVPpABTspdKh"
     github_client_secret: str = "e4c9e71c768dbf437b0564f8dcb7d39c18c8ca79"
-    github_redirect_uri: str = "http://localhost:8000/api/auth/github/callback"
+    github_redirect_uri: str = "https://twinmind-production-5a79.up.railway.app/api/auth/github/callback"
 
     linkedin_client_id: str ="8652fp8l13a7ca"
     linkedin_client_secret: str ="WPL_AP1.PH1hHbBbcsBpYjc2.TDj3Hg=="
-    linkedin_redirect_uri: str = "http://localhost:8000/api/auth/linkedin/callback"
+    linkedin_redirect_uri: str = "https://twinmind-production-5a79.up.railway.app/api/auth/linkedin/callback"
     
     class Config:
         env_file = ".env"
         extra = "allow"
 
 settings = Settings()
+
+
 
 
 
