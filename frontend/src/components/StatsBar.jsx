@@ -4,7 +4,7 @@ import { useAuth } from "@/hooks/useAuth"
 import { motion, AnimatePresence } from "framer-motion"
 import toast from "react-hot-toast"
 
-const BASE = "http://localhost:8000/api/mcp"
+const BASE = "https://twinmind-production-5a79.up.railway.app/api/mcp"
 
 function EmailPanel({ userId, onClose }) {
   const [emails, setEmails] = useState([])
@@ -203,3 +203,4 @@ export default function StatsBar() {
     </div>
   )
 }
+

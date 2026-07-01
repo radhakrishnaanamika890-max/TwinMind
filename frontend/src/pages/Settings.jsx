@@ -35,7 +35,7 @@ const labelStyle = {
   fontWeight: 500
 }
 
-const API_BASE = "http://localhost:8000"
+const API_BASE = "https://twinmind-production-5a79.up.railway.app"
 
 export default function Settings() {
   const { user } = useAuth()
@@ -831,3 +831,4 @@ export default function Settings() {
     </div>
   )
 }
+

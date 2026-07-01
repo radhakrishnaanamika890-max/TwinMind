@@ -1,7 +1,7 @@
 ﻿import { useEffect, useRef } from 'react'
 
 const USER_ID = 'test123'
-const BASE = 'http://localhost:8000/api/mcp'
+const BASE = 'https://twinmind-production-5a79.up.railway.app/api/mcp'
 const CHECK_INTERVAL = 60000 // 1 minute
 
 export default function NotificationManager() {
@@ -73,3 +73,4 @@ export default function NotificationManager() {
 
   return null
 }
+

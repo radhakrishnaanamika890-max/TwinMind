@@ -3,7 +3,7 @@ import { Sparkles, X, Loader2, Sun } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useAuth } from "@/hooks/useAuth"
 
-const BASE = "http://localhost:8000/api/chat"
+const BASE = "https://twinmind-production-5a79.up.railway.app/api/chat"
 
 export default function DailyDigest() {
   const { user } = useAuth()
@@ -123,3 +123,4 @@ export default function DailyDigest() {
     </>
   )
 }
+
