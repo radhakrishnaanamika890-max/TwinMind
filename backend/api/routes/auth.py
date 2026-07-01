@@ -9,6 +9,8 @@ router = APIRouter()
 profiles_db = {}
 settings_db = {}
 
+FRONTEND_URL = "https://radiant-contentment-production-686c.up.railway.app"
+
 @router.post("/verify")
 async def verify_token(req: dict):
     try:
@@ -68,7 +70,7 @@ async def github_callback(code: str, state: str):
     if not access_token:
         raise HTTPException(status_code=400, detail="GitHub token exchange failed")
     save_provider_token(user_id, "github", {"access_token": access_token})
-    return RedirectResponse(url="http://localhost:3000/dashboard/settings?github=connected")
+    return RedirectResponse(url=f"{FRONTEND_URL}/dashboard/settings?github=connected")
 
 @router.get("/github/status")
 async def github_status(user_id: str):
@@ -139,7 +141,7 @@ async def linkedin_callback(code: str, state: str):
     if not access_token:
         raise HTTPException(status_code=400, detail="LinkedIn token exchange failed")
     save_provider_token(user_id, "linkedin", {"access_token": access_token})
-    return RedirectResponse(url="http://localhost:3000/dashboard/settings?linkedin=connected")
+    return RedirectResponse(url=f"{FRONTEND_URL}/dashboard/settings?linkedin=connected")
 
 @router.get("/linkedin/status")
 async def linkedin_status(user_id: str):
