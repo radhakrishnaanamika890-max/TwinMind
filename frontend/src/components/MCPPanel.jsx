@@ -2,7 +2,7 @@
 import { Mail, Calendar, FolderOpen, RefreshCw, CheckCircle } from 'lucide-react'
 
 const USER_ID = 'test123'
-const BASE = 'http://localhost:8000/api/mcp'
+const BASE = 'https://twinmind-production-5a79.up.railway.app/api/mcp'
 
 export default function MCPPanel() {
   const [tab, setTab] = useState('gmail')
@@ -143,3 +143,4 @@ export default function MCPPanel() {
     </div>
   )
 }
+

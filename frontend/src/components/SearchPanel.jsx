@@ -3,7 +3,7 @@ import { Search, Mail, Calendar, FolderOpen, X, Loader2 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
 const USER_ID = "test123"
-const BASE = "http://localhost:8000/api/mcp"
+const BASE = "https://twinmind-production-5a79.up.railway.app/api/mcp"
 
 export default function SearchPanel({ onClose }) {
   const [query, setQuery] = useState("")
@@ -136,3 +136,4 @@ export default function SearchPanel({ onClose }) {
     </div>
   )
 }
+

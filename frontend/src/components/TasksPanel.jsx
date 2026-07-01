@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useAuth } from "@/hooks/useAuth"
 import toast from "react-hot-toast"
 
-const API_BASE = "http://localhost:8000/api/tasks"
+const API_BASE = "https://twinmind-production-5a79.up.railway.app/api/tasks"
 
 function TaskRow({ task, onToggle, onDelete }) {
   return (
@@ -157,3 +157,4 @@ export default function TasksPanel({ voiceTranscript }) {
     </div>
   )
 }
+
