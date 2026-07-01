@@ -1,0 +1,17 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Inter, sans-serif;
+  background: #050510;
+  overflow: hidden;
+  color: white;
+}
+
+.input-focus-glow:focus-within {
+  border-color: rgba(120,160,255,0.7) !important;
+  box-shadow: 0 0 0 3px rgba(80,120,255,0.2), 0 0 30px rgba(80,120,255,0.3) !important;
+}
